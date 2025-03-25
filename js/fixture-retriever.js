@@ -12,7 +12,7 @@ var FixtureRetriever = function() {
             FixtureParser.parseFixtures(filter(fixtures));
         },
         getFixturesByDate: function(date, filter) {
-            var url = 'http://fixture-finder-us.herokuapp.com/fixture-finder/fixtures/' + date + '?callback=?';
+            var url = 'https://fixturefinder.proxy.beeceptor.com/fixture-finder/fixtures/' + date + '?callback=?';
             $('.spinner').fadeIn(1000);
 
             FixtureFinder.setDateWithCurrentLanguage(date, FixtureFinder.currentLanguage);
