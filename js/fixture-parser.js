@@ -16,8 +16,8 @@ var FixtureParser = function() {
 
     var preprocessFixtures = function(fixtures) {
         $.each(fixtures, function(index, fixture) {
-            if (fixture.country === 'Scotland') {
-                if (fixture.kickOff.status === 'FULL_TIME') {
+            if (fixture.country === 'Italy') {
+                if (fixture.kickOff.status === 'FINISHED') {
                     fixture.score.homeGoals = 0;
                     fixture.score.awayGoals = 0;
                 }
